@@ -9,9 +9,15 @@ import './assets/css/iconHeart.css'
 import './assets/css/notification.css'
 import './assets/css/newTweet.css'
 
-import App from './App';
 
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { BrowserRouter} from 'react-router-dom'
+import Roteamento from './routes.js'
+
+ReactDOM.render(
+    <BrowserRouter>
+        <Roteamento/>
+    </BrowserRouter>
+    , document.getElementById('root'));
 registerServiceWorker();
